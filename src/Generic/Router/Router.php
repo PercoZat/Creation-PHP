@@ -30,12 +30,12 @@ class Router
      * Renvoi le controleur lié à l'URL donnée
      */
 
-     public function match(ServerRequestInterface $request): ?MiddlewareInterface
-     {
+    public function match(ServerRequestInterface $request): ?MiddlewareInterface
+    {
 
         $result = $this->routerVendor->match($request);
 
-        if ($result->isSuccess()){
+        if ($result->isSuccess()) {
             //J'ai une route
             $controller = $result->getMatchedRoute()->getMiddleware();
         } else {
@@ -43,5 +43,5 @@ class Router
             $controller = null;
         }
         return $controller;
-     }
+    }
 }

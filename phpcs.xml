@@ -4,7 +4,7 @@
     <description>Sniffeur de code de l'application</description>
     <arg name="colors"></arg>
 
-    <file>scr</file>
+    <file>src</file>
     <file>public/index.php</file>
 
     <rule ref="PSR2"></rule>

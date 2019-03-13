@@ -28,7 +28,7 @@ class RouterMiddleware implements MiddlewareInterface
         //Récupération de l'éventuel contrôleur
         $controller = $this->router->match($request);
         //condition
-        if (!is_null($controller)){
+        if (!is_null($controller)) {
             $response = $controller->process($request, $handler);
         } else {
             $response = new Response(404, [], '<h1>ERREUR 404 PAGE INTROUVABLE!!!</h1>');
