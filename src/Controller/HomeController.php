@@ -12,6 +12,6 @@ class HomeController implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        return new Response(200, [], '<h1>COUCOU depuis HomeControler</h1>');
+        return new Response(200, [], '<h1>COUCOU depuis HomeControler LEVEL 2</h1>');
     }
 }

@@ -23,9 +23,5 @@ class TrailingSlashMiddlewares implements MiddlewareInterface
         } else {
             return $handler->handle($request);
         }
-
-        
-// var_dump($newURL);
-        die('On est dans TrailingSlash Middleware');
     }
 }
