@@ -11,9 +11,21 @@ class TrailingSlashMiddlewares implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
+        // Trouve URL
         $url = $request->getUri()->getPath();
 
-        var_dump($url);
+        $lastCharacter = substr($url, -1);
+
+        if ($lastCharacter === '/') {
+            $newURL = substr($url, 0, -1);
+            $response = new Response(301, ['location' => $newURL]);
+            return $response;
+        } else {
+            return $handler->handle($request);
+        }
+
+        
+// var_dump($newURL);
         die('On est dans TrailingSlash Middleware');
     }
 }

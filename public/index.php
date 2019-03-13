@@ -1,8 +1,9 @@
 <?php
 
 use Generic\App;
-use GuzzleHttp\Psr7\Response;
+use App\Controller\HomeController;
 use GuzzleHttp\Psr7\ServerRequest;
+use Generic\Middlewares\TrailingSlashMiddlewares;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
@@ -10,7 +11,10 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 $request = ServerRequest::fromGlobals();
 
 //création de la reponse
-$app = new App();
+$app = new App([
+    new TrailingSlashMiddlewares,
+    new HomeController
+]);
 $response = $app->handle($request);
 
 //Renvoi de la reponse au navigateur
