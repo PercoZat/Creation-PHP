@@ -3,7 +3,9 @@ use Generic\App;
 use Generic\Router\Router;
 use App\Controller\HomeController;
 use GuzzleHttp\Psr7\ServerRequest;
+use App\Controller\AboutController;
 use Generic\Router\RouterMiddleware;
+use App\Controller\ContactController;
 use Generic\Middlewares\TrailingSlashMiddlewares;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
@@ -14,7 +16,9 @@ $request = ServerRequest::fromGlobals();
 // ajout des routes dans le route
 
 $router = new Router();
-$router->addRoute('/home', new HomeController(), 'homepage');
+$router->addRoute('/', new HomeController(), 'homepage');
+$router->addRoute('/contact', new ContactController(), 'contact');
+$router->addRoute('/about', new AboutController(), 'about');
 
 //création de la reponse
 $app = new App([
