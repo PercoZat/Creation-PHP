@@ -1,0 +1,35 @@
+[33mcommit b25907e460f8901b1f338b0fd3ab71633b619ac2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Pierre CROZAT <perco.crozat@gmail.com>
+Date:   Thu Mar 14 12:05:14 2019 +0100
+
+    Amélioration code, Création d'une nouvelle page
+
+[33mcommit 31a1b7e54da601e8a0ec55be15fb561ae72b437b[m
+Author: Pierre CROZAT <perco.crozat@gmail.com>
+Date:   Wed Mar 13 16:13:45 2019 +0100
+
+    Correction syntaxe
+
+[33mcommit db467090196cd49b82c6d0a510e2bd06c8fa7dc0[m
+Author: Pierre CROZAT <perco.crozat@gmail.com>
+Date:   Wed Mar 13 16:09:33 2019 +0100
+
+    Mise en place Router ...
+
+[33mcommit c3e8223e6566e01ecf1afc462957999ab1dbc50b[m
+Author: Pierre CROZAT <perco.crozat@gmail.com>
+Date:   Wed Mar 13 10:53:37 2019 +0100
+
+    Modif HomeController, App, TrailingSlashMiddlewares
+
+[33mcommit 5b02d426a7db937e9aeddbfdd65361d470dbf9bf[m
+Author: Pierre CROZAT <perco.crozat@gmail.com>
+Date:   Tue Mar 12 09:06:00 2019 +0100
+
+    Second : Composer, phpcs, HomeController, App, TrailingSlashMiddlewares
+
+[33mcommit 709d119f8133e8e74cab0e2ce147891373bbd19d[m
+Author: Pierre CROZAT <perco.crozat@gmail.com>
+Date:   Mon Mar 11 09:38:53 2019 +0100
+
+    Premier ptojet PHP
